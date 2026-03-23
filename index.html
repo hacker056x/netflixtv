@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>NETFLIX TV</title>
+    
+    <!-- HLS.js para reproducción de streams -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen" class="login-container">
+    <div class="login-box">
+        <h1>NETFLIX TV</h1>
+        <input type="text" id="login-user" placeholder="Usuario" autocomplete="off">
+        <input type="password" id="login-pass" placeholder="Contraseña" onkeypress="if(event.key==='Enter') handleLogin()">
+        <button class="login-btn" onclick="handleLogin()">Iniciar Sesión</button>
+        <div id="login-error-msg" class="login-error"></div>
+        <div class="login-footer">
+            <p>¿No tienes cuenta? <a href="https://wa.link/149sd0">Contacta al administrador</a></p>
+			<p>© 2026 Netflix Tv. Todos los derechos reservados.</p>
+			<p>By @hacker056</p>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="main-app" class="app">
+    <!-- NAVBAR -->
+    <div class="navbar" id="navbar">
+        <div class="nav-left">
+            <div class="logo" onclick="resetToHome()">NETFLIX TV</div>
+            <div class="nav-links" id="nav-links"></div>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Buscar canales..." onkeyup="handleSearch()">
+                <div id="search-suggestions" class="search-suggestions"></div>
+            </div>
+            <div class="user-avatar" id="user-avatar">U</div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- HERO SECTION -->
+        <div id="hero-section" class="hero-section">
+            <div class="hero-info">
+                <div class="hero-title" id="hero-title">Bienvenido</div>
+                <div class="hero-description" id="hero-desc">Selecciona un canal para comenzar</div>
+                <div class="hero-buttons">
+                    <button class="btn-play" id="hero-play-btn"><i class="fas fa-play"></i> Ver ahora</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROWS CONTAINER -->
+        <div class="rows-container" id="rows-container"></div>
+    </div>
+
+    <!-- PLAYER MODAL -->
+    <div id="player-modal" class="player-modal">
+        <div class="player-container">
+            <button class="close-player" onclick="closePlayer()"><i class="fas fa-times"></i></button>
+            <video id="video-player" controls autoplay></video>
+        </div>
+        <div class="player-info">
+            <div class="player-title" id="player-title">Canal</div>
+            <div class="player-meta">
+                <span><i class="fas fa-eye"></i> EN VIVO</span>
+                <span><i class="fas fa-signal"></i> HD</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
