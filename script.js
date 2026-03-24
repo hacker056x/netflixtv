@@ -24,7 +24,7 @@ const channelsList = [
     { title: "Claro Sports", category: "Deportes", logo: "https://i.imgur.com/jT3Zla0.png", url: "http://45.5.119.43:4000/play/a024/index.m3u8" },
 	{ title: "DSports", category: "Deportes", logo: "https://yt3.googleusercontent.com/TMzi1CE7Cg1HUYJbbYfGSgAVKzYrEPztlDflq6x170GGq53c1Yxv_JAs10QjdHeQ6fiW99hSHg=s900-c-k-c0x00ffffff-no-rj", url: "http://totalplay.site:80/almacosta1/nmAMNbMftq/417199.m3u8" },
 	{ title: "ESPN 2", category: "Deportes", logo: "https://i.imgur.com/0aP1oW1.jpeg", url: "http://38.49.128.38:8000/play/a091/index.m3u8" },
-	{ title: "", category: "", logo: "", url: "" },
+	{ title: "Espn 1 ARG", category: "Deportes", logo: "https://1.bp.blogspot.com/-_-38APt-8pM/Xay_Z5zsLcI/AAAAAAAAAkU/PF6BQcFPL5YtdLFw8kn4prIX6q2UbXF_gCLcBGAsYHQ/s200/5.png", url: "http://tv.proyectox.vip:8080/live/eEiiLll09384Ecaiman34RtR/KTap2pdJx7/9522.m3u8" },
 	
 	{ title: "Disney Jr", category: "Infantil", logo: "https://i.ytimg.com/vi/XlN37Kmiplc/maxresdefault.jpg", url: "http://38.49.128.38:8000/play/a0bz/index.m3u8" },
     { title: "", category: "", logo: "", url: "" },
